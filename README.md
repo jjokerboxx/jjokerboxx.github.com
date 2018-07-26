@@ -11,9 +11,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Header 1 노동요
+## Header 2 책 추천
+### Header 3 모바일 게임 분석
 
 - Bulleted
 - List
@@ -31,6 +31,8 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 가장 중요한 것은 남의 것을 배끼는 것이 아니라, [직접 찾아보고](https://stackoverflow.com/) [스스로 부딪치며](https://docs.unity3d.com/ScriptReference/index.html) [익히는 것](https://steemit.com/@eepisodee)이다.
 
 개발자의 마인드 = 내가 무엇을 만들 것인가를 먼저 생각하고 이를 논리적이고 효율적으로 설계한 다음, 자신이 앞으로 할 작업을 편리하고 효율적으로 만들어줄 도구(라이브러리)를 생성하여 실제 개발을 진행한다.
+
+Toy project, Side project, Daily commit, TIL (Today I Learned)
 
 ### Jekyll Themes
 
