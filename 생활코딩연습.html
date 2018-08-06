@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> <a href="http://localhost">HTML PRACTICE</a></title>
+        <style>                                                         header {
+            border-bottom: 3px solid gray;
+            margin: 20px auto;
+            background-color: whitesmoke;
+        }
+        .head {
+            height: 200px;
+            width: 300px;
+            margin: 80px auto;
+            border-radius: 90px;
+            background-color: orangered;
+            border-left: 20px solid rgba(255,255,255,0.4);
+            border-right: 20px solid rgba(255,255,255,0.4);
+            position: relative;
+        }
+        .head-inner {
+            background-color: orangered;
+            border-radius: 90px;
+            position: absolute;
+            border-left: 20px solid rgba(255,255,255,0.4);
+            border-right: 20px solid rgba(255,255,255,0.4);
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: -20px 30px;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            font-size: 50px;
+            padding: 30px;
+            color: red;
+            text-align: center;
+
+        }
+
+        nav {
+            border-right: 3px solid gray;
+            width: 200px;
+            height: 600px;
+            float: left;
+        }
+    li{
+        margin: 20px 0;
+    }
+    a{
+        display: block;
+        background-color: goldenrod;
+        color: red;
+        padding: 5px 0;
+        text-align: center;
+    }
+            nav ol {
+                line-height: 20px;
+                list-style: none;
+                color: red;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: green;
+        }
+
+    </style>
+        <!--<link rel="stylesheet" type="text/css" href="http://localhost/Profile.css">-->
+    </head>
+    <body>
+        <header><h1>Welcome to Episode's world..!</h1>
+            <div class="head">
+                <div class="head-inner">
+                    
+                </div>
+                    
+
+            </div>
+               
+
+        </header>
+
+        <nav>
+            <ol>
+                <li><a href="https://soundcloud.com/isitworththeepisode"> SOUNDCLOUD </a></li>
+                <li><a href="https://www.facebook.com/poeticthinker/"> POETIC_THINKER </a></li>
+                <li><a href="https://www.youtube.com/channel/UCnyQEqkTcF_crTvIZm9lhoA?view_as=subscriber"> YOUTUBE </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100000425378321"> PROFILE </a></li>
+                <li><a href="https://www.facebook.com/surrendertomadness/"> S2M </a></li>
+
+            </ol>
+        </nav>
+        <div id="control">
+
+            <input type="button" value="black" onclick=""/>
+            <input type="button" value="write" onclick="" />
+            <!--<a href="http://localhost/write.php">WRITE</a>-->
+        </div>
+        <div>
+            <article>
+                <form action="http://localhost/php/3.php" method="post">
+                    <p> 제목 : <input type="text" name="title" /></p>
+                    <p> 작성자 : <input type="text" name="author" /></p>
+                    <p> 본문 : <textarea name="description"></textarea></p>
+                    <input type="submit" />
+                </form>
+
+            </article>
+
+        </div>
+
+
+        <h2>DATABASE</h2>
+
+
+    </body>
+</html>
