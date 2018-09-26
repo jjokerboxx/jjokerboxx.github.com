@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Episode</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
         
     </head>
     <body>
@@ -32,12 +33,12 @@
         <div id="control">
 
             <input type="button" value="black" onclick=""/>
-            <input type="button" value="write" onclick="" />
+            <input type="button" value="white" onclick="" />  <!--이 부분은 그냥 한 버튼으로 통합해 버리자.-->
             <!--<a href="http://localhost/write.php">WRITE</a>-->
         </div>
         <div>
             <article>
-                <form action="fileio.html" method="post"> <!--php도 가능, JQuery 좋은생각 -->
+                <form action="/fileio.html" method="post"> <!--php도 가능, JQuery 좋은생각 -->
                     <p> 제목 : <input type="text" name="title" /></p>
                     <p> 작성자 : <input type="text" name="author" /></p>
                     <p> 본문 : <textarea name="description"></textarea></p>
