@@ -1,6 +1,9 @@
 
-var name = document.getElementsByName("title");
-var author = document.getElementsByName("author");
-var description = document.getElementsByName("description");
+var name_ = document.getElementsByName("title");
 
+var description_ = document.getElementsByName("description");
 
+function load_pages(param)
+{
+    
+};

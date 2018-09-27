@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Episode</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        
         
     </head>
     <body>
@@ -32,26 +32,49 @@
         </nav>
         <div id="control">
 
-            <input type="button" value="black" onclick=""/>
-            <input type="button" value="white" onclick="" />  <!--이 부분은 그냥 한 버튼으로 통합해 버리자.-->
+            <button value="black&white" onclick="click_fx();"/>
+            <script>
+                function click_fx(){
+                    if(document.getElementsByTagName("body").style.color == "black")
+                    {
+                        document.getElementById().style.color = "white"
+                    }
+                    else{
+                        document.getElementById().style.color = "black"
+                    }
+                    
+                };
+            </script>
+            
             <!--<a href="http://localhost/write.php">WRITE</a>-->
         </div>
         <div>
             <article>
-                <form action="/fileio.html" method="post"> <!--php도 가능, JQuery 좋은생각 -->
-                    <p> 제목 : <input type="text" name="title" /></p>
-                    <p> 작성자 : <input type="text" name="author" /></p>
-                    <p> 본문 : <textarea name="description"></textarea></p>
-                    <input type="submit" />
-                </form>
+                <h2 name ="title" >제목 : 기타등등</h2>
+
+                <p name = "description">
+                    내용 
+                </p>
 
             </article>
 
         </div>
 
+        <div id = "contents">
+            <button value="REVIEW"   onclick="load_pages();"></button>
+            <button value="GAME" onclick=""></button>
+            <button value="DEV" onclick=""></button>
+            <button value="POETIC THINKER" onclick=""></button>
+        </div>
+        <div>
 
-        <h2>DATABASE</h2>
+        </div>
+        <div>
+            
+        </div>
 
+        
 
+        <script src="script.js"></script>
     </body>
 </html>

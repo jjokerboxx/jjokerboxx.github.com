@@ -1,10 +1,14 @@
 var express = require('express');
-var app = express();
-var fs = require('fs');
+var app = express(); // app이라는 인스턴스로 익스프레스 활성화
+var fs = require('fs'); //fs라는 인스턴스로 파일시스템 활성화
+// var mysql = require('mysql'); - npm install mysql --save// MYSQL설치 및 활성화
+var Body_parser = require('body-parser');
 
-app.set('view engine', 'pug');
-app.set('views', './views');
-//app.locals
+
+app.use(Body_parser.json());
+app.use(Body_parser.urlencoded({extended : true}));
+
+
 
 
 // 홈페이지 설명 글
@@ -28,7 +32,9 @@ app.post(['/topic', '/topic/:id'],function(req, res){
         res.render('views');
     })
 });
-// 콘솔 로그는 터미널에 보이는 로그!
-app.listen(3000, function(){
-    console.log('Conneted 3000 port!');
+/*
+app.get('???', function(req, res){
+    something else
+
 });
+*/
