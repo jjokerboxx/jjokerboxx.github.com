@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <title>Episode</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        
+        <!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>--> <!--제이쿼리 cdn-->
+        <script src="script.js"></script>
         
     </head>
-    <body>
+    <body id="bodycolor">
         <header><h1>Welcome to my shabby house</h1>
             <div class="head">
                 <div class="head-inner">
@@ -17,6 +18,7 @@
 
             </div>
                
+            
 
         </header>
 
@@ -48,10 +50,10 @@
         </div>
 
         <div id = "contents">
-            <input type="button" value="REVIEW" onclick="load_pages(review);">
-            <input type="button" value="GAME" onclick="load_pages(game);">
-            <input type="button" value="DEV" onclick="load_pages(dev);">
-            <input type="button" value="POETIC THINKER" onclick="load_pages(poeticthinker);">
+            <input type="button" name="review" value="REVIEW" onclick="load_pages(document.getElementsByName);">
+            <input type="button" name="game" value="GAME" onclick="oad_pages(document.getElementsByName);">
+            <input type="button" name="dev" value="DEV" onclick="oad_pages(document.getElementsByName);">
+            <input type="button" name="poeticthinker" value="POETIC THINKER" onclick="oad_pages(document.getElementsByName);">
 
         </div>
         <div>
@@ -63,6 +65,6 @@
 
         
 
-        <script src="script.js"></script>
+        
     </body>
 </html>

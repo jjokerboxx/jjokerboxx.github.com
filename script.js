@@ -9,12 +9,13 @@ function load_pages(param)
 };
 
 function click_fx(){
-    if(document.getElementsByTagName("body").style.backgroundColor == "black")
+    if(document.getElementById('bodycolor').className =="black")
     {
-        document.getElementById().style.backgroundColor = "white"
+        document.getElementById('bodycolor').className ="white";
     }
-    else{
-        document.getElementById().style.backgroundColor = "black"
+    else
+    {
+        document.getElementById('bodycolor').className ="black";
     }
     
 };
