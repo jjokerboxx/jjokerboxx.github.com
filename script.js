@@ -5,7 +5,7 @@ var description_ = document.getElementsByName("description");
 
 function load_pages(param)
 {
-    window.open("https://jjokerboxx.github.io/"+param+".html");
+    window.open("https://jjokerboxx.github.io/"+param);
 };
 
 function click_fx(){
