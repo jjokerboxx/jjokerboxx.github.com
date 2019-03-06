@@ -36,7 +36,19 @@
         </nav>
         <div id="control">
             <input type="button" class="btn btn-default" value="Black&White" onclick="click_fx();">
-            
+            <script>
+                function click_fx(){
+                    if(document.getElementById('bodycolor').className =="black")
+                        {
+                            document.getElementById('bodycolor').className ="white";
+                        }
+                        else
+                        {
+                            document.getElementById('bodycolor').className ="black";
+                        }
+
+                    };
+            </script>
             <!--<a href="http://localhost/write.php">WRITE</a>-->
         </div>
         <div>
