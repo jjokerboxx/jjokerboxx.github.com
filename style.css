@@ -1,10 +1,10 @@
-<style>                                                         
-        header {
+                                                         
+header {
             border-bottom: 3px solid gray;
             margin: 20px auto;
-            background-color: whitesmoke;
+            background-color: white;
         }
-        .head {
+.head {
             height: 200px;
             width: 300px;
             margin: 80px auto;
@@ -14,7 +14,7 @@
             border-right: 20px solid rgba(255,255,255,0.4);
             position: relative;
         }
-        .head-inner {
+.head-inner {
             background-color: orangered;
             border-radius: 90px;
             position: absolute;
@@ -26,16 +26,17 @@
             bottom: 0;
             margin: -20px 30px;
         }
-        body.black{
+body.black {
             background-color: black;
             color: white;
 
         }
-        body.white{
+body.white {
             background-color: white
             
         }
-        h1{
+h1 {
+        width: 0 auto;
             font-size: 50px;
             padding: 30px;
             color: red;
@@ -43,37 +44,145 @@
 
         }
 
-        nav {
-            border-right: 3px solid gray;
-            width: 200px;
-            height: 600px;
-            float: left;
+
+nav {
+    border-right: 3px solid gray;
+    width: 200px;
+    height: 600px;
+    float: left;
         }
-    li{
+li {
         margin: 20px 0;
     }
-    a{
+a {
         display: block;
         background-color: goldenrod;
         color: red;
         padding: 5px 0;
         text-align: center;
     }
-            nav ol {
+nav ol {
                 line-height: 20px;
                 list-style: none;
                 color: red;
             }
 
-        article {
+article {
             float: left;
             padding: 20px;
         }
 
-        h2 {
+h2 {
             font-size: 30px;
             color: green;
         }
+img { max-width: 100%; height: auto; } /* 반응형 이미지 */
 
-    </style>
-        <!---->
+
+.container {
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+.val,h1,ul {
+            margin: 0%;
+            padding: 0%;
+            font-size: 30px;
+            line-height: 1.3;
+            font-family: 'Fontdiner Swanky', cursive;
+            text-align: center;
+            
+        }
+        
+.job {
+        display: inline-block;
+        vertical-align: top;
+        height: 1.5em;
+        overflow: hidden;
+            
+
+        }
+.job-list {
+            line-height: 1em;
+            padding-right: 25px;
+            padding-left: 25px;
+            background-color: orangered;
+            list-style-type: none;
+            animation-name: roll;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            color: black;
+            float: right;
+        }
+/*
+.job2 {
+            display: inline block;
+            
+            vertical-align: top;
+            height: 1.5em;
+            overflow: hidden;
+            float: left;
+        }
+.job-list2 {
+            padding-right: 25px;
+            padding-left: 25px;
+            background-color: black;
+            list-style-type: none;
+            animation-name: roll;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            color: beige;
+        }
+*/
+@keyframes roll {
+            0% {
+                transform: translateY(0);
+                
+            }
+            25% {
+                transform: translateY(-20%);
+                
+            }
+            50% {
+                transform: translateY(-40%); 
+                
+            }
+            75% {
+                transform: translateY(-60%); 
+                
+            }
+            100% {
+                transform: translateY(-80%); 
+                
+            }
+        }
+
+footer {
+            border-top: 4px solid slategray;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+        }
+/*
+header {
+    
+    border-bottom: 4px solid slategray;
+    margin: 0 auto;
+    text-align: center;
+}
+#id {
+    text-align: right;
+}
+
+
+
+div{
+    margin: 5%;
+}
+*/
+
+
