@@ -94,7 +94,9 @@ img { max-width: 100%; height: auto; } /* 반응형 이미지 */
             text-align: center;
             
         }
-        
+li {
+    margin-top: 0;
+}   
 .job {
         display: inline-block;
         vertical-align: top;
