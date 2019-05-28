@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Episode</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--부트스트랩 -->
+        <script src="script.js"></script>
+        
+    </head>
+    <body id="bodycolor">
+        <header>
+            <div class="val" >
+                    
+                    <div class="job">
+                            Hey there,  I'm 
+                                    <ul class="job-list">
+                                                    <li>Coder</li>
+                                                    <li>Producer</li>
+                                                    <li>Poet</li>
+                                                    <li>Gamer</li>
+                                                    <li>Coder</li>
+                                    </ul>
+                    </div>
+
+            </div>
+            <div class="head">
+                <div class="head-inner">
+                    
+                </div>
+                    
+
+            </div>
+               
+            
+
+        </header>
+
+        <nav>
+            <ol>
+                <li><a href="https://soundcloud.com/isitworththeepisode"> SOUNDCLOUD </a></li>
+                <li><a href="https://www.facebook.com/poeticthinker/"> POETIC_THINKER </a></li>
+                <li><a href="https://www.youtube.com/channel/UCnyQEqkTcF_crTvIZm9lhoA?view_as=subscriber"> YOUTUBE </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100000425378321"> PROFILE </a></li>
+                <li><a href="https://www.facebook.com/surrendertomadness/"> S2M </a></li>
+                <li><a href="https://www.facebook.com/poetofpsychopath/"> POP </a></li>
+            </ol>
+        </nav>
+        <div id="control">
+            <input type="button" class="btn btn-default" value="Black&White" onclick="click_fx();">
+            
+            <!--<a href="http://localhost/write.php">WRITE</a>-->
+        </div>
+
+        <div class="container">
+
+Mathematics of Computer Science.  - M.I.T. opencourseware
+
+Abstract:
+lecture was about a logical induction with proposition, predicate and axioms
+
+For the English:
+new terms I learned = comtemplate, lemma, bogus, moral(noun), recitation(school word), grail(holy), gist, polynomial
+
+expression = taken for granted, made out of, grow exponentially
+
+Lec 1.  PROPOSITIONS:
+
+Proposition is a statement that is either true || false
+
+<embed src="https://jjokerboxx.github.io/lecture note 01.pdf" type="application/pdf" />
+
+        </div>
+
+    </body>
+</html>
