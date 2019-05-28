@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Episode</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--부트스트랩 -->
+        <script src="script.js"></script>
+        
+    </head>
+    <body id="bodycolor">
+        <header>
+            <div class="val" >
+                    
+                    <div class="job">
+                            Hey there,  I'm 
+                                    <ul class="job-list">
+                                                    <li>Coder</li>
+                                                    <li>Producer</li>
+                                                    <li>Poet</li>
+                                                    <li>Gamer</li>
+                                                    <li>Coder</li>
+                                    </ul>
+                    </div>
+
+            </div>
+            <div class="head">
+                <div class="head-inner">
+                    
+                </div>
+                    
+
+            </div>
+               
+            
+
+        </header>
+
+        <nav>
+            <ol>
+                <li><a href="https://soundcloud.com/isitworththeepisode"> SOUNDCLOUD </a></li>
+                <li><a href="https://www.facebook.com/poeticthinker/"> POETIC_THINKER </a></li>
+                <li><a href="https://www.youtube.com/channel/UCnyQEqkTcF_crTvIZm9lhoA?view_as=subscriber"> YOUTUBE </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100000425378321"> PROFILE </a></li>
+                <li><a href="https://www.facebook.com/surrendertomadness/"> S2M </a></li>
+                <li><a href="https://www.facebook.com/poetofpsychopath/"> POP </a></li>
+            </ol>
+        </nav>
+        <div id="control">
+            <input type="button" class="btn btn-default" value="Black&White" onclick="click_fx();">
+            
+            <!--<a href="http://localhost/write.php">WRITE</a>-->
+        </div>
+
+        <div class="container">
+            <article>
+              <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>NO.</th>
+                        <th>TITLE</th>
+                        <th>DATE</th>
+                        <th>TAG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote09">Lecture Note</a></td>
+                        <td>2019.03.31</td>
+                        <td>line 3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote08">Lecture Note</a></td>
+                        <td>2019.03.31</td>
+                        <td>line 3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote07">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote06">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote05">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote04">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote03">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote02">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote01">Lecture Note</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><a href = "https://jjokerboxx.github.io/lecturenote00">Lecture Note 01</a></td>
+                        <td>2018.10.31</td>
+                        <td>line 2</td>
+                    </tr>
+                </tbody>
+
+              </table>
+
+            </article>
+        </div>
+
+        <a class="btn btn-default">Writing</a>
+
+        <div class="text-center">
+            <ul class="pagination">
+                <li><a href="##">1</a></li>
+                <li><a href="##">2</a></li>
+                <li><a href="##">3</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
