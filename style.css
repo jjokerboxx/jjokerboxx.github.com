@@ -26,11 +26,14 @@ header {
             bottom: 0;
             margin: -20px 30px;
         }
-#contents {
-    float: left;
+.contents {
+        height: 140px;
 }
 article.postentre{
-    border: 2px solid orangered;
+            float: left;
+            border: 2px solid orangered;
+            width: 240px;
+            height: 110px;
 }
 body.black {
             background-color: black;
@@ -44,22 +47,24 @@ body.white {
 
 h1 {
         width: 0 auto;
-            font-size: 50px;
-            padding: 30px;
-            color: red;
-            text-align: center;
+        font-size: 50px;
+        padding: 30px;
+        color: red;
+        text-align: center;
 
-        }
+    }
 
 
 nav {
-    border-right: 3px solid orangered;
-    width: 200px;
-    height: 600px;
-    float: left;
-        }
+        position: absolute;
+        border-right: 3px solid orangered;
+        background-color: white;
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
 li {
-        margin: 20px 0;
+    margin: 20px 0;
     }
 a {
         display: block;
@@ -67,20 +72,21 @@ a {
         color: red;
         padding: 5px 0;
         text-align: center;
-    }
+}
 nav ol {
-                line-height: 20px;
-                list-style: none;
-                color: red;
-            }
-
-article {
-            float: left;
-            padding: 20px;
-            background-color: whitesmoke;
-            
-        }
-
+            line-height: 20px;
+            list-style: none;
+            color: red;
+}
+.docs{
+    float: left;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.docs_art{
+    width: 750px;
+    height: 200px;
+}
 h2 {
             font-size: 30px;
             color: green;
@@ -114,12 +120,11 @@ li {
 .job {
         display: inline-block;
         vertical-align: top;
-        height: 1.3em;
+        height: 1.2em;
         overflow: hidden;
             
 
         }
-
 .job-list {
             
             line-height: 1em;
@@ -179,30 +184,23 @@ li {
                 
             }
         }
-
+.bodyy {
+    float: right;
+    height: 100%;
+}
 footer {
-            border-top: 4px solid slategray;
-            margin: 0 auto;
-            text-align: center;
-            font-family: 'Lobster', cursive;
-        }
-/*
-header {
     
-    border-bottom: 4px solid slategray;
-    margin: 0 auto;
-    text-align: center;
+        /* position: absolute; */
+        position: fixed;
+        border-top: 4px solid slategray;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        background-color: white;
 }
-#id {
-    text-align: right;
-}
-
-
-
-div{
-    margin: 5%;
-}
-*/
 
 
 

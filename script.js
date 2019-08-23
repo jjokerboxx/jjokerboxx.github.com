@@ -10,10 +10,18 @@ wbtn.addEventListener('click',function(){
 })
 */  
 
+function when_load(){
+    
+    clock();
+    console.log("loaded!")
+}
+
+
+
 function load_pages(param)
 {
     window.open("https://jjokerboxx.github.io/"+param);
-};
+}
 
 function click_fx(){
     if(document.getElementById('bodycolor').className =="black")
@@ -25,12 +33,22 @@ function click_fx(){
         document.getElementById('bodycolor').className ="black";
     }
     
-};
+}
 
 function clock(){
 
-    string posttime = new Date().toLocaleString();
-    document.getElementsByClassName('post date') = posttime;
+    var posttime = new Date().toLocaleString();
+    var dates = document.getElementsByClassName("post date");
+    for (let i = 0; i < dates.length; i++){
+        dates[i].innerHTML = posttime;
+        console.log("date updated!")
+    }
+    // document.getElementsByClassName("post date")[0].innerHTML = posttime;
+    // document.getElementsByClassName("post date")[1].innerHTML = posttime;
+    // document.getElementsByClassName("post date")[2].innerHTML = posttime;
+    // document.getElementsByClassName("post date")[3].innerHTML = posttime;
+        
+    
 }
 
 function metadesc(){
