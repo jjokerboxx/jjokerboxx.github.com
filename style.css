@@ -35,6 +35,12 @@ article.postentre{
             width: 240px;
             height: 110px;
 }
+html,body{
+    height: 100%;
+}
+.page-wrapper{
+    min-height: 100%;
+}
 body.black {
             background-color: black;
             color: white;
@@ -200,19 +206,29 @@ li {
     float: right;
     height: 100%;
 }
-footer {
+.footer {
     
         /* position: absolute; */
-        position: fixed;
+        position: relative;
         border-top: 4px solid slategray;
-        bottom: 0;
-        left: 0;
-        height: 70px;
-        width: 100%;
-        text-align: center;
+        height: 100px;
         font-family: 'Lobster', cursive;
         background-color: white;
 }
+.footer .footer-contents{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer .footer-contacts{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
 
 
 
