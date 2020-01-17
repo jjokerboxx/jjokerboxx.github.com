@@ -1,195 +1,102 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Episode</title>
-        <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>--> <!--제이쿼리 cdn-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--부트스트랩 -->
-        <script src="script.js"></script>
-        
-    </head>
-    <body id="bodycolor" onload="when_load();">
-        <header>
-            <div class="val" >
-                    
-                    <div class="job">
-                            Hey there, &nbsp; I'm  &nbsp;
-                                    <ul class="job-list">
-                                                    <li>Coder</li>
-                                                    <li>Producer</li>
-                                                    <li>Poet</li>
-                                                    <li>Gamer</li>
-                                                    <li>Coder</li>
-                                    </ul>
-                                   
-                                    
-                    </div>
-            </div>
-            <div class="head">
-                <div class="head-inner">
-                    
-                </div>
-                    
-
-            </div>
-               
-            
-
-        </header>
-        <div class="page-wrapper">
-            <div class="float">
-                <ol>
-                    <li><input type="button" class="btn btn-default" onclick="location.href='https://soundcloud.com/isitworththeepisode'" value="SOUNDCLOUD"></li>
-                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/poeticthinker/'" value="POETIC THINKER"></li>
-                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.youtube.com/channel/UCnyQEqkTcF_crTvIZm9lhoA?view_as=subscriber'" value="YOUTUBE"></li>
-                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/profile.php?id=100000425378321'"  value="PROFILE"></li>
-                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/surrendertomadness/'" value="S2M"></li>
-                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/poetofpsychopath/'" value="POP" ></li>
-    
-                </ol>
-            </div>
-            <!-- <div class="bodyy"> -->
-    
-                <!-- 색생 반전 버튼 -->
-                <span id="control">
-                    <input type="button" class="btn btn-default" value="Black || White" onclick="click_fx();">
-                    <script>
-                        function click_fx(){
-                            if(document.getElementById('bodycolor').className =="black"){
-                                    document.getElementById('bodycolor').className ="white";
-                                }
-                                else{
-                                    document.getElementById('bodycolor').className ="black";
-                                }
-                            };
-                    </script>
-                <!-- 메인 페이지로 이동 -->
-                </span>
-                <span id="goHome">
-                    <input type="button" class="btn btn-default" value="Main Page" onclick="location.href='https://jjokerboxx.github.io/'">
-                </span>
-                <span>
-                    <input type="button" class="btn btn-default" value="Card Box" onclick="show_card();" >
-                    <script>
-                        function show_card(){
-                            var flt = document.getElementsByClassName("float");
-                            if (flt[0].style.visibility == "visible"){
-                               flt[0].style.visibility = "hidden";
-                            }
-                            else if (flt[0].style.visibility == "hidden"){
-                                flt[0].style.visibility = "visible";
-                            }
-                            else{
-                               flt[0].style.visibility = "hidden";
-                            }
-                        }
-                        
-                        
-                    </script>
-                </span>
-                
-                
-                <!-- 본문 영역 -->
-                <div class="">
-                    <!-- 글 영역 -->
-                    <div class="docs">
-                        <article class="docs_art">
-                            <h2 name ="title" >제목 : Mathematics for computer science</h2>
-                    
-                            <p name = "description" class="text-center" >
-                                생활코딩이라는 페이스북 커뮤니티를 보다보면 컴퓨터 프로그래밍과 수학에 대한 연결성에 대한 논의가 상당히 많다
-                            </p>
-                            <p name = "description" class="text-center">
-                                실제로 코딩에 수학이 그렇게 많은 영향을 미치는지 초보자로서 알 수 없었기에 좀 더 나은 미래를 위한 빌드업으로
-                            </p>
-                           <p name = "description" class="text-center">
-                                MIT 오픈코스웨어를 수강하였다. 시작할 때는 6십만명이었지만 완강한 사람은 2만명 남짓이라는 사실이 놀라웠다.
-                            </p>
-                    
-                        </article>            
-                        
-                        <article class="docs_art">
-                            <h2 name ="title" >제목 : Akai mini</h2>
-            
-                            <p name = "description" class="text-center" >
-                                항상 노트북으로만 작곡하다가 포터블 키보드를 구매하기로 결정했다.
-                            </p>
-                            <p name = "description" class="text-center">
-                                대상은 Akai mpk mini 가격은 133000원이다.
-                            </p>
-                            <p name = "description" class="text-center">
-                                건반 23키와 8개의 드럼패드 그리고 음향 프로그래밍용 볼륨키 8개이다.
-                            </p>
-            
-                        </article>
-            
-                    </div>
-            
-                    <!-- 컨텐츠 카드 영역 -->
-                    <div class = "contents">
-                        <article class="postentre">
-                            <a href="/review.html">REVIEW</a>
-                            <p class="post date">
-                                "시간 혹은 함수로 구성해도 무방?"
-                            </p>
-                            <div class="post meta">
-                                lecture note  추가 
-                            </div>
-                        </article>
-            
-                        <article class="postentre">
-                                <a href="/game.html">GAME</a>
-                                <p class="post date">
-                                    "시간 혹은 함수로 구성해도 무방?"
-                                </p>
-                                <div class="post meta">
-                                    "설명란" 혹은 함수로 구성해도 무방?
-                                </div>
-                        </article>
-            
-                        <article class="postentre">
-                                <a href="/dev.html">DEV</a>
-                                <p class="post date">
-                                    "시간 혹은 함수로 구성해도 무방?"
-                                </p>
-                                <div class="post meta">
-                                    "설명란" 혹은 함수로 구성해도 무방?
-                                </div>
-                        </article>
-                        
-                        <article class="postentre">
-                                <a href="/aboutme.html">ARTS</a>
-                                <p class="post date">
-                                    "시간 혹은 함수로 구성해도 무방?"
-                                </p>
-                                <div class="post meta">
-                                    "설명란" 혹은 함수로 구성해도 무방?
-                                </div>
-                        </article>    
-                    </div>
-                </div>
-                
-        </div>
-        
-                    
-        <!-- </div> -->
-        
-        <div class="footer">
-            <div class="footer-contents">
-                dlrlgns58@gmail.com 
-            </div>
-            <div class="footer-contacts">
-                https://github.com/jjokerboxx
-            </p>
-            </div>
-
-        </div>
-        
+<head>
+    <meta charset="utf-8">
+    <title>LOLTOCHESS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
+    <!-- 부트스트랩? -->
 
     
-           
-        
-    </body>
+    
+</head>
+<body onload="when_load()">
+
+<span>
+  <h1 id="start">Welcome to Dirt'o'chess!</h1>
+  <h1 id="welcome"></h1>
+</span>
+
+
+<p>Thanks to my muse 'FriendshipIng' that she gave me an inspiration of this project</p>
+
+
+<!-- 2 button to reroll and EXp up -->
+<div>
+  <button onclick="reroll()">REROLL</button>
+  <button onclick="Exp_Up()">EXP UP</button>
+</div>
+
+<!-- Garen HP -->
+<p>
+  <div id="asdasd"></div>
+</p>
+
+<!-- show EXP -->
+<p>
+  <span>EXP : </span>
+  <span, id="Exp_Num">0</span>
+</p>
+
+<!-- show Gold -->
+<p>
+  <span>Gold : </span>
+  <span id="gold"></span>
+</p>
+
+<div class="battlefield" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p>
+    여기에 드래그 드롭을 해주시오
+  </p>
+  
+  <!-- <button id="ddd"></button>
+  <button id="aaa"></button>
+  <button id="ccc"></button>
+  <button id="eee"></button> -->
+</div>  
+
+<!-- 왜 캔버스에 버튼들이 표시되지 않는 건가??? -->
+<!-- <div ondrop="drop(event)" ondragover="allowDrop(event)"> -->
+<div>
+  <img id="asdasdd" src="asdasd.jpg" alt="asdasd.jpg" hidden>
+  <!-- 캔버스와 필드 생성 -->
+  <canvas id="field" height="500", width="1000" >
+  
+  
+  </canvas>
+</div>
+
+<!-- 벤치 리스트 -->
+<!-- 역으로 드래그 되지 않기 위해 -->
+<!-- <p ondrop="drop(event)" ondragover="allowDrop(event)"> -->
+<p>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)" id="01">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)" id="02">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)" id="03">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)" id="04">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)">  </button>
+  <button class="bench_list" onclick="call_of_the_duty()" draggable="true" ondragstart="drag(event)">  </button>
+
+</p>
+
+<!-- 새로운 챔프 구매 리스트 --> 
+<p>
+  <button class="buy_cham", onclick="button_pressed(event)">챔피언</button>
+  <button class="buy_cham", onclick="button_pressed(event)">챔피언</button>
+  <button class="buy_cham", onclick="button_pressed(event)">챔피언</button>
+  <button class="buy_cham", onclick="button_pressed(event)">챔피언</button>
+  <button class="buy_cham", onclick="button_pressed(event)">챔피언</button>
+</p>
+
+
+<script src="script.js"></script>  
+<!-- <script type="text/javascript" src="bootstrap-3.3.2-dist/js/bootstrap.js"></script> -->
+<!-- 부트스트랩의 자바스크립트는 무적권 제이쿼리가 있어야 작동함, 제이쿼리 사용법 익히기 -->
+
+
+</body>
 </html>
