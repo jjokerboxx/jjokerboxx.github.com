@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Keywords" content="Blog, Devlog, 개발" />
+        <meta name="Description" content="Blog, Devlog, 개발" />
+        <meta name="viewport" content="width=device-width, user-scalable=1.0">
+
+        <title>Episode</title>
+        <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+        
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script> <!--제이쿼리 cdn-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--부트스트랩 -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        
+    </head>
+    <body id="bodycolor" onload="when_load();">
+        <header>
+            <div class="val" >
+                    
+                    <div class="job">
+                            Hey there, &nbsp; I'm  &nbsp;
+                                    <ul class="job-list">
+                                                    <li>Coder</li>
+                                                    <li>Producer</li>
+                                                    <li>Poet</li>
+                                                    <li>Gamer</li>
+                                                    <li>Coder</li>
+                                    </ul>
+                                   
+                                    
+                    </div>
+            </div>
+            <div class="head">
+                <div class="head-inner">
+                    
+                </div>
+                    
+
+            </div>
+               
+            
+
+        </header>
+        <div class="page-wrapper">
+            <div class="float">
+                <ol>
+                    <li><input type="button" class="btn btn-default" onclick="location.href='https://soundcloud.com/isitworththeepisode'" value="SOUNDCLOUD"></li>
+                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/poeticthinker/'" value="POETIC THINKER"></li>
+                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.youtube.com/channel/UCnyQEqkTcF_crTvIZm9lhoA?view_as=subscriber'" value="YOUTUBE"></li>
+                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/profile.php?id=100000425378321'"  value="PROFILE"></li>
+                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/surrendertomadness/'" value="S2M"></li>
+                    <li><input type="button" class="btn btn-default" onclick="location.href='https://www.facebook.com/poetofpsychopath/'" value="POP" ></li>
+    
+                </ol>
+            </div>
+            <!-- <div class="bodyy"> -->
+    
+                <!-- 색생 반전 버튼 -->
+                <span id="control">
+                    <input type="button" class="btn btn-default" value="Black || White" onclick="click_fx();">
+                    <script>
+                        function click_fx(){
+                            if(document.getElementById('bodycolor').className =="black"){
+                                    document.getElementById('bodycolor').className ="white";
+                                }
+                                else{
+                                    document.getElementById('bodycolor').className ="black";
+                                }
+                            };
+                    </script>
+                <!-- 메인 페이지로 이동 -->
+                </span>
+                <span id="goHome">
+                    <input type="button" class="btn btn-default" value="Main Page" onclick="location.href='https://jjokerboxx.github.io/'">
+                </span>
+                <span>
+                    <input type="button" class="btn btn-default" value="Card Box" onclick="show_card();" >
+                    <script>
+                        function show_card(){
+                            var flt = document.getElementsByClassName("float");
+                            if (flt[0].style.visibility == "visible"){
+                               flt[0].style.visibility = "hidden";
+                            }
+                            else if (flt[0].style.visibility == "hidden"){
+                                flt[0].style.visibility = "visible";
+                            }
+                            else{
+                               flt[0].style.visibility = "hidden";
+                            }
+                        }
+                        
+                        
+                    </script>
+                </span>
+                
+                
+                <!-- 본문 영역 -->
+                <div class="">
+                    <!-- 글 영역 -->
+                    <div id="docs" class="rounded-pill">
+                        <article class="text-center">
+                            <h2 name ="title" >프론트엔드 연습용 정적 웹 블로그</h2>
+                    
+                            <p name = "description" class="text-center" >
+                                간단한 HTML과 CSS, JS를 직접 작성하면서 기본적인 프론트엔드의 기술들을 이해한다.
+                            </p>
+                            <p name = "description" class="text-center">
+                                다만 CSS는 Bootstrap을 사용하고 JS에는 JQuery를 이용해보고자 한다.
+                            </p>
+                           <p name = "description" class="text-center">
+                                다만 정적 웹페이지의 한계로 인해 다양한 페이제에서 공통된 HTML을 구성하기 어렵다
+                            </p>
+                    
+                        </article>            
+            
+                    </div>
+            
+                    <!-- 컨텐츠 카드 영역 -->
+                    <div class = "contents">
+                        <article class="postentre">
+                            <a href="./arts.html">REVIEW</a>
+                            <p class="post date">
+                                "시간 혹은 함수로 구성해도 무방?"
+                                
+                            </p>
+                            <div class="post meta">
+                                lecture note  추가 
+                            </div>
+                        </article>
+            
+                        <article class="postentre">
+                                <a href="./game.html">GAME</a>
+                                <p class="post date">
+                                    "시간 혹은 함수로 구성해도 무방?"
+                                </p>
+                                <div class="post meta" id="asd">
+                                    <script type="text/javascript">
+                                    $(document).ready(function(){
+
+                                        $('#asd').load("./header.html");
+
+                                    });
+ 
+                                    </script>
+                                </div>
+                        </article>
+            
+                        <article class="postentre">
+                                <a href="./dev.html">DEV</a>
+                                <p class="post date">
+                                    "시간 혹은 함수로 구성해도 무방?"
+                                </p>
+                                <div class="post meta">
+                                    제이쿼리로 해당 페이지의 아이디를를 불러온 다음 내용물을 간략화해서 출력
+                                </div>
+                        </article>
+                        
+                        <article class="postentre">
+                                <a href="./aboutme.html">ARTS</a>
+                                <p class="post date">
+                                    "시간 혹은 함수로 구성해도 무방?"
+                                </p>
+                                <div class="post meta">
+                                    "설명란" 혹은 함수로 구성해도 무방?
+                                </div>
+                        </article>    
+                    </div>
+                </div>
+                
+        </div>
+        
+                    
+        <!-- </div> -->
+        
+        <div class="footer">
+            <div class="footer-contents">
+                dlrlgns58@gmail.com 
+            </div>
+            <div class="footer-contacts">
+                https://github.com/jjokerboxx
+            </p>
+            </div>
+
+        </div>
+        
+
+    
+           
+        
+    </body>
+</html>
