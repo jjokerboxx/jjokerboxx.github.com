@@ -1,42 +1,24 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Episode</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-    </head>
-    <body>
-        <header><h1>방명록</h1>
-            <div class="head">
-                <div class="head-inner">
-                    
-                </div>
-                    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header role="header" data-include="include/header.html"></header>
 
-            </div>
-               
+    <div>
+        <p>
+            본문
+        </p>
+    </div>
 
-        </header>
+    <footer role="footer" data-include="include/footer.html"></footer>
 
-        <nav>
-            <ol>
-                <li><a href="https://soundcloud.com/isitworththeepisode"> SOUNDCLOUD </a></li>
-                <li><a href="https://www.facebook.com/poeticthinker/"> POETIC_THINKER </a></li>
-                <li><a href="https://www.youtube.com/channel/UCnyQEqkTcF_crTvIZm9lhoA?view_as=subscriber"> YOUTUBE </a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100000425378321"> PROFILE </a></li>
-                <li><a href="https://www.facebook.com/surrendertomadness/"> S2M </a></li>
+    <script src="http://code.jquery.com/jquery.min.js"></script> 
+    <script> $(function(){ includeLayout(); }); function includeLayout(){ var includeArea = $('[data-include]'); var self, url; $.each(includeArea, function() { self = $(this); url = self.data("include"); self.load(url, function() { self.removeAttr("data-include"); }); }); } </script>
 
-            </ol>
-        </nav>
-        
-        <div>
-            <article>
-              review
-
-            </article>
-
-        </div>
-
-    </body>
+</body>
 </html>
