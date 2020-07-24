@@ -3,7 +3,7 @@ github pages
 
 web frontend prac ;)
 
-markdown, html 
+HTML, CSS, JS  
 
 
 contnents 
