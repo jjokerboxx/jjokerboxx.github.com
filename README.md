@@ -5,7 +5,8 @@ Practice Stacks:
 Default - HTML, CSS, JS
 
 
-- Contnents of Blog
+**Contents of Blog**
+
 
 1. TIL
 - The Skecth of daily learning. 
