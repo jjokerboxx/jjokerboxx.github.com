@@ -1,32 +1,25 @@
 # https://jjokerboxx.github.io/
-github pages
+Github pages for practicing Web Frontend
 
-web frontend prac ;)
-
-HTML, CSS, JS  
-
-
-contnents 
-
-1. lecture note 
-- mathematics for computer sicence
-- database
-- linear algebra
-- algorithm
-- Business school
+Practice Stacks:
+Default - HTML, CSS, JS
 
 
-2. devlog (each dev have github address)
-- webparser
-- frontend (github.io)
-- pygame
-- unity
+- Contnents of Blog
+
+1. TIL
+- The Skecth of daily learning. 
 
 
-3. artwork
-- daily drawing
-- blender prac
-- poetic thinker
+2. Devlog
+- Python
+- FE (Mostly React JS)
+- BE (Django | Node JS)
+- Unity
 
 
-4. ???
+3. Artworks
+- Daily Doodle
+- Houdini | Blender
+- Poethic Thinker
+
